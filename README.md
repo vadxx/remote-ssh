@@ -17,3 +17,10 @@ ip a
 .\setup.ps1 debian user localhost 3022
 # syntax args: <alias> <login> <target IP> <target PORT>
 ```
+
+## Share drives
+```bash
+# share drive G to vm
+sudo usermod -aG vboxsf $USER
+sudo ln -s /media/sf_G_DRIVE /vm
+```
